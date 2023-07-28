@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+}
+
+.bg-grey {
+    background: #e6e6e6;
+}
+
+section > .container{
+    margin: 0 100px;
+    padding: 30px 50px;
+}
+
+#nav-bar {
+    text-align: center;
+}
+
+header img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#banner {
+    width: 200px;
+    color: #f7f7f7;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 100px;
+    
+    text-align: center;
+}
+
+#nav-bar .container{
+    display: inline-block;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0;
+}
+
+#nav-bar .container ul {
+    display: flex;
+}
+
+#nav-bar .container ul li {
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+#nav-bar .container ul li:last-child {
+    border-right: 1px solid black;
+}
+#nav-bar .container a {
+    text-decoration: none;
+    color: hsl(0deg 0% 0%);
+    /* margin: 14px 16px; */
+    position: relative;
+}
+
+#abc {
+    position: absolute;
+}
+
+#nav-bar .container li:hover {
+    background: black;
+}
+#nav-bar .container li:hover a{
+    color: #f7f7f7;
+}
+
+#about .personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2;
+}
+
+.social {
+    display: flex;
+    float: left;
+    color: rgb(41, 135, 207);
+}
+
+#target, #personal-info {
+    padding: 40px 60px;
+}
+
+#job-info .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    gap: 20px;
+}
+
+#job-info .container .job-info-items {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #cfcdcd;
+    padding: 20px;
+}
+.job-info-items {
+    color: #635a5a;
+    line-height: 2;
+}
+.job-info-items {
+    position: relative;
+}
+
+.job-info-items #icon{
+    position: absolute;
+    top: 28px;
+    left: 300px;
+    font-size: 33px;
+}
+
+.hobby ul li {
+    width: 30px;
+    height: 30px;
+    list-style-type: none; 
+    display: flex;
+    float: left;
+    color: rgb(59, 59, 238);
+    padding: 10px;
+    margin: 40px 10px;
+    font-size: 20px;
+    border: 2px solid rgb(63, 15, 218);
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+}
+
+.hobby ul li:hover {
+    border: 2px solid rgb(27, 211, 27);
+}
+
+.hobby ul li .ic-megaphone::after {
+    font-size: 10px;
+    content: "Âm nhạc";
+    position: absolute;
+    top:60px;
+    right:  10px;
+}
+.hobby ul li .ic-strategy::after {
+    font-size: 10px;
+    content: "Chơi game";
+    position: absolute;
+    top:60px;
+    right:  5px;
+}
+.hobby ul li .ic-hotairballoon::after {
+    font-size: 10px;
+    content: "Du lịch";
+    position: absolute;
+    top:60px;
+    right:  10px;
+}
+.hobby ul li .ic-basket::after {
+    font-size: 10px;
+    content: "Nấu ăn";
+    position: absolute;
+    top:60px;
+    right:  10px;
+}
+
+.level {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+.no-skill {
+    background: #ffffff;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.certificate-award {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.certificate {
+    padding-bottom: 30px;
+}
+
+.funix {
+    display: flex;
+    /* width: 50%; */
+    padding: 20px;
+    border-right: 1px solid #635a5a;
+}
+.cert_dev img {
+    display: block;
+    max-width:100px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+    padding-right: 40px;
+    margin: auto;
+}
+
+#footer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 30px 50px;
+}
+#footer ul li{
+    justify-content: center;
+    margin: 0px 20px;
+    float: left;
+    font-size: 20px;
+}
+#footer ul li i {
+    color: rgb(41, 135, 207);
+}
+
+.all-project {
+    display: flex;
+}
+
+.individual-project-2 {
+    display: inline-block;
+    padding: 20px;
+}
+
+.img-project img {
+    display: block;
+    max-width:300px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+}
+.title{
+    padding: 20px 20px;
+    border: 1px solid rgb(207, 207, 207);
+}
+.detail {
+    padding: 4px;
+    border: 1px solid rgb(207, 207, 207);
+}
+.detail-project{
+
+}
