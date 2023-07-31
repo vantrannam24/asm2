@@ -6,6 +6,7 @@
     background: #e6e6e6;
 }
 
+
 section > .container{
     margin: 0 100px;
     padding: 30px 50px;
@@ -21,7 +22,6 @@ header img {
     max-height: 100%;
     width: auto;
     height: auto;
-    position: relative;
 }
 
 #banner {
@@ -43,34 +43,21 @@ header img {
     padding: 0;
 }
 
-#nav-bar .container ul {
-    display: flex;
+#nav-bar .container .row a {
+    text-decoration: none;
 }
 
-#nav-bar .container ul li {
+#nav-bar .container .row .col-sm-2, .col-sm-4 {
     border-left: 1px solid black;
-    display: flex;
-    align-items: center;
-    padding: 5px 15px;
 }
-#nav-bar .container ul li:last-child {
+#nav-bar .container .col-sm-2:last-child {
     border-right: 1px solid black;
 }
-#nav-bar .container a {
-    text-decoration: none;
-    color: hsl(0deg 0% 0%);
-    /* margin: 14px 16px; */
-    position: relative;
-}
 
-#abc {
-    position: absolute;
-}
-
-#nav-bar .container li:hover {
+#nav-bar .container .col-sm-2:hover {
     background: black;
 }
-#nav-bar .container li:hover a{
+#nav-bar .container .col-sm-2:hover a{
     color: #f7f7f7;
 }
 
@@ -113,7 +100,7 @@ header img {
 .job-info-items #icon{
     position: absolute;
     top: 28px;
-    left: 300px;
+    right: 20px;
     font-size: 33px;
 }
 
@@ -255,4 +242,53 @@ header img {
 }
 .detail-project{
 
+}
+/* màn tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section .container {
+        margin: auto;
+    }
+
+    #job-info .container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .hobby ul li {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+}
+
+/* màn mobile */
+@media screen and (max-width: 767px) {
+    #nav-bar .container .row .col-sm-2, .col-sm-4 {
+        border: none;
+        padding: 10px;
+    }
+    #nav-bar {
+        text-align: left;
+    }
+    section .container {
+        margin: 0rem;
+    }
+    .info {
+        padding-left: 0px;
+    }
+    #about .personal {
+        display: block;
+    }
+    #job-info .container {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 991px) {
+    .name {
+        display: none;
+    }
 }
